@@ -2,7 +2,7 @@
   "interface_version": 2,
   "name": "绿梦：时空之声",
   "icon": "resource/logo.ico",
-  "github": "https://github.com/REPLACE_USER/REPLACE_REPO",
+  "github": "https://github.com/zzsslk/LvMengMaa",
   "license": "LICENSE",
   "welcome": [
     "resource/announcement/1.简介.md",
