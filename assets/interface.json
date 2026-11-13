@@ -1,0 +1,69 @@
+{
+  "interface_version": 2,
+  "name": "绿梦：时空之声",
+  "icon": "resource/logo.ico",
+  "github": "https://github.com/REPLACE_USER/REPLACE_REPO",
+  "license": "LICENSE",
+  "welcome": [
+    "resource/announcement/1.简介.md",
+    "resource/announcement/2.用户协议.md"
+  ],
+  "description": "基于图像识别技术的《绿梦：时空之声》自动化工具。全程由 DeepSeek Harness（DSH）智能体制作。",
+  "controller": [
+    {
+      "name": "MuMu 模拟器",
+      "type": "Adb"
+    }
+  ],
+  "resource": [
+    {
+      "name": "官方服",
+      "path": [
+        "resource/base"
+      ]
+    }
+  ],
+  "task": [
+    {
+      "name": "战斗流程",
+      "entry": "BattleFlow",
+      "default_check": true,
+      "description": "主菜单→蚀务日常→副本→构战回廊→受蚀者·异变体-I→开始挑战→出战，战斗三键连点直至结算",
+      "group": [
+        "battle"
+      ]
+    },
+    {
+      "name": "日常流程",
+      "entry": "daily_flow",
+      "default_check": true,
+      "description": "打开主菜单进入蚀务日常界面",
+      "group": [
+        "daily"
+      ]
+    }
+  ],
+  "group": [
+    {
+      "name": "daily",
+      "label": "日常任务"
+    },
+    {
+      "name": "battle",
+      "label": "战斗任务"
+    }
+  ],
+  "option": {
+    "adb路径": {
+      "type": "input",
+      "default": "C:\\maa-tools\\adb.exe",
+      "description": "MuMu 模拟器自带的 adb.exe 所在路径（建议复制到无空格路径）"
+    },
+    "adb地址": {
+      "type": "input",
+      "default": "127.0.0.1:16416",
+      "description": "MuMu 12 实例的 adb 连接地址（端口对应实例，默认 16416）"
+    }
+  },
+  "version": "0.1.0"
+}

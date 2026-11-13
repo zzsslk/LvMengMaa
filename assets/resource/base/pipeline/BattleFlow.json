@@ -1,0 +1,62 @@
+{
+  "BattleFlow": {
+    "recognition": "DirectHit",
+    "next": ["ClosePopup", "Step1_Richang"]
+  },
+  "ClosePopup": {
+    "recognition": "OCR",
+    "expected": ["自选包", "蚀务之礼"],
+    "action": "Click",
+    "target": [912, 128],
+    "next": ["ClosePopup", "Step1_Richang"]
+  },
+  "Step1_Richang": {
+    "recognition": "OCR",
+    "expected": ["蚀务日常", "主菜单"],
+    "action": "Click",
+    "target": [166, 352],
+    "next": ["Step2_Fuben"]
+  },
+  "Step2_Fuben": {
+    "recognition": "OCR",
+    "expected": ["副本", "今日要务"],
+    "action": "Click",
+    "target": [72, 320],
+    "next": ["Step3_Gouzhan"]
+  },
+  "Step3_Gouzhan": {
+    "recognition": "OCR",
+    "expected": ["构战回廊", "常态模拟"],
+    "action": "Click",
+    "target": [172, 160],
+    "next": ["Step4_Shouchi"]
+  },
+  "Step4_Shouchi": {
+    "recognition": "OCR",
+    "expected": ["受蚀者·异变体"],
+    "action": "Click",
+    "target": [1082, 205],
+    "next": ["Step5_DiffI"]
+  },
+  "Step5_DiffI": {
+    "recognition": "OCR",
+    "expected": ["开始挑战", "推荐等级"],
+    "action": "Click",
+    "target": [146, 101],
+    "next": ["Step6_Start"]
+  },
+  "Step6_Start": {
+    "recognition": "OCR",
+    "expected": ["开始挑战"],
+    "action": "Click",
+    "target": [1098, 670],
+    "next": ["Step7_Deploy"]
+  },
+  "Step7_Deploy": {
+    "recognition": "OCR",
+    "expected": ["出战", "队伍"],
+    "action": "Click",
+    "target": [1122, 666],
+    "next": []
+  }
+}

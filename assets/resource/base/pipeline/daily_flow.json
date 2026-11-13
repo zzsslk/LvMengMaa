@@ -1,0 +1,29 @@
+{
+    "开始": {
+        "next": [
+            "打开主菜单"
+        ]
+    },
+    "打开主菜单": {
+        "action": "Click",
+        "target": [120, 664],
+        "next": [
+            "进入蚀务日常"
+        ]
+    },
+    "进入蚀务日常": {
+        "recognition": "OCR",
+        "expected": "蚀务日常",
+        "action": "Click",
+        "target_offset": [0, -59, 0, -59],
+        "next": [
+            "确认日常界面"
+        ]
+    },
+    "确认日常界面": {
+        "recognition": "OCR",
+        "expected": "今日要务",
+        "action": "DoNothing",
+        "next": []
+    }
+}
