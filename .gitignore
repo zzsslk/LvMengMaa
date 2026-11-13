@@ -453,8 +453,7 @@ tools/ImageCropper/**/*.png
 config
 debug
 # ===== 绿梦项目补充 =====
-# OCR 模型（CI 从 MaaCommonAssets submodule 自动配置）
-assets/resource/base/model/ocr/
+# OCR 模型已直接提交到仓库（assets/resource/base/model/ocr/），无需 submodule
 assets/MaaCommonAssets/
 
 # 开发调试产物
